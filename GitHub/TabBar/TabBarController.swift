@@ -18,15 +18,15 @@ final class TabBarController: UITabBarController {
     }
     
     enum Tab: CaseIterable {
-        case timeline
+        case profile
         
         func instantiateViewController() -> UIViewController {
             let vc: UIViewController!
             let tabBarItem: UITabBarItem
             switch self {
-            case .timeline:
+            case .profile:
                 vc = UIViewController()
-                tabBarItem = UITabBarItem(title: "タイムライン", image: UIImage(), tag: 0)
+                tabBarItem = UITabBarItem(title: "Profile", image: UIImage(), tag: 0)
             }
             vc.tabBarItem = tabBarItem
             return vc
