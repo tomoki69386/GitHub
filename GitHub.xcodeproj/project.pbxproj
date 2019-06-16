@@ -53,6 +53,7 @@
 		B71427CA22B7005A0017BAD7 /* UIBarButtonItem+GitHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71427C922B7005A0017BAD7 /* UIBarButtonItem+GitHub.swift */; };
 		B71427CD22B7017F0017BAD7 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71427CC22B7017F0017BAD7 /* R.generated.swift */; };
 		B71427CF22B702730017BAD7 /* GithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71427CE22B702730017BAD7 /* GithubAPI.swift */; };
+		B71427D122B7047F0017BAD7 /* BaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71427D022B7047F0017BAD7 /* BaseProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +128,7 @@
 		B71427C922B7005A0017BAD7 /* UIBarButtonItem+GitHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+GitHub.swift"; sourceTree = "<group>"; };
 		B71427CC22B7017F0017BAD7 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		B71427CE22B702730017BAD7 /* GithubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GithubAPI.swift; path = GitHub/Extensions/GithubAPI.swift; sourceTree = SOURCE_ROOT; };
+		B71427D022B7047F0017BAD7 /* BaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BaseProvider.swift; path = GitHub/Extensions/BaseProvider.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,6 +273,7 @@
 			isa = PBXGroup;
 			children = (
 				B71427CE22B702730017BAD7 /* GithubAPI.swift */,
+				B71427D022B7047F0017BAD7 /* BaseProvider.swift */,
 			);
 			path = Networks;
 			sourceTree = "<group>";
@@ -570,6 +573,7 @@
 				B71427CD22B7017F0017BAD7 /* R.generated.swift in Sources */,
 				B71427B622B6E04D0017BAD7 /* FollowersViewController.swift in Sources */,
 				B71427CA22B7005A0017BAD7 /* UIBarButtonItem+GitHub.swift in Sources */,
+				B71427D122B7047F0017BAD7 /* BaseProvider.swift in Sources */,
 				B71427C622B6FEA50017BAD7 /* FollowersDataSource.swift in Sources */,
 				B714276C22B6C5DC0017BAD7 /* SplashViewController.swift in Sources */,
 				B71427CF22B702730017BAD7 /* GithubAPI.swift in Sources */,
