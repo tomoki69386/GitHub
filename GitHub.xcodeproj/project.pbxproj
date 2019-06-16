@@ -51,6 +51,7 @@
 		B71427C422B6FE3E0017BAD7 /* BasicListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B71427C322B6FE3E0017BAD7 /* BasicListTableViewCell.xib */; };
 		B71427C622B6FEA50017BAD7 /* FollowersDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71427C522B6FEA50017BAD7 /* FollowersDataSource.swift */; };
 		B71427CA22B7005A0017BAD7 /* UIBarButtonItem+GitHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71427C922B7005A0017BAD7 /* UIBarButtonItem+GitHub.swift */; };
+		B71427CD22B7017F0017BAD7 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71427CC22B7017F0017BAD7 /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +124,7 @@
 		B71427C322B6FE3E0017BAD7 /* BasicListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicListTableViewCell.xib; sourceTree = "<group>"; };
 		B71427C522B6FEA50017BAD7 /* FollowersDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersDataSource.swift; sourceTree = "<group>"; };
 		B71427C922B7005A0017BAD7 /* UIBarButtonItem+GitHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+GitHub.swift"; sourceTree = "<group>"; };
+		B71427CC22B7017F0017BAD7 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 		B714272A22B6C17C0017BAD7 = {
 			isa = PBXGroup;
 			children = (
+				B71427CC22B7017F0017BAD7 /* R.generated.swift */,
 				B714277522B6D0140017BAD7 /* Frameworks */,
 				B714273522B6C17C0017BAD7 /* GitHub */,
 				B714274A22B6C17E0017BAD7 /* GitHubTests */,
@@ -373,6 +376,7 @@
 				B714273022B6C17C0017BAD7 /* Frameworks */,
 				B714273122B6C17C0017BAD7 /* Resources */,
 				B714277422B6CE8B0017BAD7 /* Carthage */,
+				B71427CB22B701230017BAD7 /* R.Swift */,
 			);
 			buildRules = (
 			);
@@ -533,6 +537,24 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
+		B71427CB22B701230017BAD7 /* R.Swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = R.Swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo $SRCROOT\n\"$SRCROOT/bin/rswift\" generate \"$SRCROOT\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -542,6 +564,7 @@
 			files = (
 				B71427AA22B6D4FA0017BAD7 /* ProfileViewController.swift in Sources */,
 				B714273722B6C17C0017BAD7 /* AppDelegate.swift in Sources */,
+				B71427CD22B7017F0017BAD7 /* R.generated.swift in Sources */,
 				B71427B622B6E04D0017BAD7 /* FollowersViewController.swift in Sources */,
 				B71427CA22B7005A0017BAD7 /* UIBarButtonItem+GitHub.swift in Sources */,
 				B71427C622B6FEA50017BAD7 /* FollowersDataSource.swift in Sources */,
