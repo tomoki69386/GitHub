@@ -43,6 +43,12 @@
 		B71427AE22B6D50E0017BAD7 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71427AD22B6D50E0017BAD7 /* ProfileModel.swift */; };
 		B71427B122B6D67C0017BAD7 /* IconViiewew.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71427B022B6D67C0017BAD7 /* IconViiewew.swift */; };
 		B71427B322B6D6F90017BAD7 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B71427B222B6D6F90017BAD7 /* Color.xcassets */; };
+		B71427B622B6E04D0017BAD7 /* FollowersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71427B522B6E04D0017BAD7 /* FollowersViewController.swift */; };
+		B71427B822B6E0640017BAD7 /* Followers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B71427B722B6E0640017BAD7 /* Followers.storyboard */; };
+		B71427BB22B6E1270017BAD7 /* Following.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B71427BA22B6E1270017BAD7 /* Following.storyboard */; };
+		B71427BD22B6E1360017BAD7 /* FollowingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71427BC22B6E1360017BAD7 /* FollowingViewController.swift */; };
+		B71427C122B6FDCE0017BAD7 /* BasicListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71427C022B6FDCE0017BAD7 /* BasicListTableViewCell.swift */; };
+		B71427C422B6FE3E0017BAD7 /* BasicListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B71427C322B6FE3E0017BAD7 /* BasicListTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +113,12 @@
 		B71427AD22B6D50E0017BAD7 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
 		B71427B022B6D67C0017BAD7 /* IconViiewew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconViiewew.swift; sourceTree = "<group>"; };
 		B71427B222B6D6F90017BAD7 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		B71427B522B6E04D0017BAD7 /* FollowersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersViewController.swift; sourceTree = "<group>"; };
+		B71427B722B6E0640017BAD7 /* Followers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Followers.storyboard; sourceTree = "<group>"; };
+		B71427BA22B6E1270017BAD7 /* Following.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Following.storyboard; sourceTree = "<group>"; };
+		B71427BC22B6E1360017BAD7 /* FollowingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingViewController.swift; sourceTree = "<group>"; };
+		B71427C022B6FDCE0017BAD7 /* BasicListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicListTableViewCell.swift; sourceTree = "<group>"; };
+		B71427C322B6FE3E0017BAD7 /* BasicListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicListTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,11 +167,11 @@
 		B714272A22B6C17C0017BAD7 = {
 			isa = PBXGroup;
 			children = (
+				B714277522B6D0140017BAD7 /* Frameworks */,
 				B714273522B6C17C0017BAD7 /* GitHub */,
 				B714274A22B6C17E0017BAD7 /* GitHubTests */,
 				B714275522B6C17E0017BAD7 /* GitHubUITests */,
 				B714273422B6C17C0017BAD7 /* Products */,
-				B714277522B6D0140017BAD7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -176,13 +188,13 @@
 		B714273522B6C17C0017BAD7 /* GitHub */ = {
 			isa = PBXGroup;
 			children = (
-				B714276822B6C4D20017BAD7 /* Networks */,
 				B714276722B6C4C60017BAD7 /* App */,
-				B714276622B6C4B40017BAD7 /* Resources */,
 				B714276522B6C4AE0017BAD7 /* Extensions */,
+				B714276822B6C4D20017BAD7 /* Networks */,
+				B714276622B6C4B40017BAD7 /* Resources */,
 				B714276422B6C4A90017BAD7 /* Views */,
-				B714274222B6C17E0017BAD7 /* Info.plist */,
 				B714276922B6C5370017BAD7 /* Info-dev.plist */,
+				B714274222B6C17E0017BAD7 /* Info.plist */,
 			);
 			path = GitHub;
 			sourceTree = "<group>";
@@ -209,11 +221,13 @@
 			isa = PBXGroup;
 			children = (
 				B71427AF22B6D6710017BAD7 /* Common */,
+				B71427B422B6E0420017BAD7 /* Followers */,
+				B71427B922B6E11C0017BAD7 /* Following */,
 				B71427A622B6D4E50017BAD7 /* Profile */,
-				B71427A122B6D1550017BAD7 /* TabBar */,
 				B714276D22B6C5E60017BAD7 /* Splash */,
+				B71427A122B6D1550017BAD7 /* TabBar */,
 			);
-			name = Views;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		B714276522B6C4AE0017BAD7 /* Extensions */ = {
@@ -232,7 +246,7 @@
 				B71427B222B6D6F90017BAD7 /* Color.xcassets */,
 				B714273F22B6C17E0017BAD7 /* LaunchScreen.storyboard */,
 			);
-			name = Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		B714276722B6C4C60017BAD7 /* App */ = {
@@ -247,16 +261,16 @@
 			isa = PBXGroup;
 			children = (
 			);
-			name = Networks;
+			path = Networks;
 			sourceTree = "<group>";
 		};
 		B714276D22B6C5E60017BAD7 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-				B714276B22B6C5DC0017BAD7 /* SplashViewController.swift */,
 				B714276E22B6C5F40017BAD7 /* Splash.storyboard */,
+				B714276B22B6C5DC0017BAD7 /* SplashViewController.swift */,
 			);
-			name = Splash;
+			path = Splash;
 			sourceTree = "<group>";
 		};
 		B714277522B6D0140017BAD7 /* Frameworks */ = {
@@ -289,8 +303,8 @@
 		B71427A122B6D1550017BAD7 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				B71427A222B6D1640017BAD7 /* TabBarController.swift */,
 				B71427A422B6D1700017BAD7 /* TabBar.storyboard */,
+				B71427A222B6D1640017BAD7 /* TabBarController.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -299,19 +313,47 @@
 			isa = PBXGroup;
 			children = (
 				B71427A722B6D4EE0017BAD7 /* Profile.storyboard */,
+				B71427AD22B6D50E0017BAD7 /* ProfileModel.swift */,
 				B71427A922B6D4FA0017BAD7 /* ProfileViewController.swift */,
 				B71427AB22B6D5080017BAD7 /* ProfileViewModel.swift */,
-				B71427AD22B6D50E0017BAD7 /* ProfileModel.swift */,
 			);
-			name = Profile;
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		B71427AF22B6D6710017BAD7 /* Common */ = {
 			isa = PBXGroup;
 			children = (
 				B71427B022B6D67C0017BAD7 /* IconViiewew.swift */,
+				B71427C222B6FE370017BAD7 /* BasicListTableViewCell */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		B71427B422B6E0420017BAD7 /* Followers */ = {
+			isa = PBXGroup;
+			children = (
+				B71427B722B6E0640017BAD7 /* Followers.storyboard */,
+				B71427B522B6E04D0017BAD7 /* FollowersViewController.swift */,
+			);
+			path = Followers;
+			sourceTree = "<group>";
+		};
+		B71427B922B6E11C0017BAD7 /* Following */ = {
+			isa = PBXGroup;
+			children = (
+				B71427BA22B6E1270017BAD7 /* Following.storyboard */,
+				B71427BC22B6E1360017BAD7 /* FollowingViewController.swift */,
+			);
+			path = Following;
+			sourceTree = "<group>";
+		};
+		B71427C222B6FE370017BAD7 /* BasicListTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B71427C022B6FDCE0017BAD7 /* BasicListTableViewCell.swift */,
+				B71427C322B6FE3E0017BAD7 /* BasicListTableViewCell.xib */,
+			);
+			name = BasicListTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -419,12 +461,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B71427B822B6E0640017BAD7 /* Followers.storyboard in Resources */,
 				B71427A822B6D4EE0017BAD7 /* Profile.storyboard in Resources */,
 				B71427A522B6D1700017BAD7 /* TabBar.storyboard in Resources */,
 				B714276A22B6C5370017BAD7 /* Info-dev.plist in Resources */,
 				B714274122B6C17E0017BAD7 /* LaunchScreen.storyboard in Resources */,
 				B71427B322B6D6F90017BAD7 /* Color.xcassets in Resources */,
 				B714273E22B6C17E0017BAD7 /* Assets.xcassets in Resources */,
+				B71427BB22B6E1270017BAD7 /* Following.storyboard in Resources */,
+				B71427C422B6FE3E0017BAD7 /* BasicListTableViewCell.xib in Resources */,
 				B714276F22B6C5F40017BAD7 /* Splash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -491,10 +536,13 @@
 			files = (
 				B71427AA22B6D4FA0017BAD7 /* ProfileViewController.swift in Sources */,
 				B714273722B6C17C0017BAD7 /* AppDelegate.swift in Sources */,
+				B71427B622B6E04D0017BAD7 /* FollowersViewController.swift in Sources */,
 				B714276C22B6C5DC0017BAD7 /* SplashViewController.swift in Sources */,
 				B714277122B6C69E0017BAD7 /* PKHUD+GitHub.swift in Sources */,
+				B71427BD22B6E1360017BAD7 /* FollowingViewController.swift in Sources */,
 				B71427B122B6D67C0017BAD7 /* IconViiewew.swift in Sources */,
 				B71427A322B6D1640017BAD7 /* TabBarController.swift in Sources */,
+				B71427C122B6FDCE0017BAD7 /* BasicListTableViewCell.swift in Sources */,
 				B714277322B6C6C60017BAD7 /* UIVew+GitHub.swift in Sources */,
 				B71427AC22B6D5080017BAD7 /* ProfileViewModel.swift in Sources */,
 				B71427AE22B6D50E0017BAD7 /* ProfileModel.swift in Sources */,
@@ -539,6 +587,7 @@
 				B714274022B6C17E0017BAD7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

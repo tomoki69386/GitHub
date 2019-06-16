@@ -10,6 +10,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Followers-->
+        <scene sceneID="Gdi-p7-Al8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Followers" id="lhA-DU-y3K" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="pGA-mt-paN"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hx9-he-ho2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-459" y="44"/>
+        </scene>
         <!--Profile View Controller-->
         <scene sceneID="Cbz-A0-Us2">
             <objects>
@@ -87,6 +97,9 @@
                                                             <state key="normal" title="16Followers">
                                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </state>
+                                                            <connections>
+                                                                <segue destination="lhA-DU-y3K" kind="push" id="m43-4Q-6XM"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m5F-LP-XPT">
                                                             <rect key="frame" x="207" y="0.0" width="207" height="43.5"/>
