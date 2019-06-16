@@ -177,7 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				B714276822B6C4D20017BAD7 /* Networks */,
-				B714276722B6C4C60017BAD7 /* Apps */,
+				B714276722B6C4C60017BAD7 /* App */,
 				B714276622B6C4B40017BAD7 /* Resources */,
 				B714276522B6C4AE0017BAD7 /* Extensions */,
 				B714276422B6C4A90017BAD7 /* Views */,
@@ -235,12 +235,12 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		B714276722B6C4C60017BAD7 /* Apps */ = {
+		B714276722B6C4C60017BAD7 /* App */ = {
 			isa = PBXGroup;
 			children = (
 				B714273622B6C17C0017BAD7 /* AppDelegate.swift */,
 			);
-			path = Apps;
+			path = App;
 			sourceTree = "<group>";
 		};
 		B714276822B6C4D20017BAD7 /* Networks */ = {
