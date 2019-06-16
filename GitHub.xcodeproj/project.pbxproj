@@ -17,6 +17,26 @@
 		B714276F22B6C5F40017BAD7 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B714276E22B6C5F40017BAD7 /* Splash.storyboard */; };
 		B714277122B6C69E0017BAD7 /* PKHUD+GitHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = B714277022B6C69E0017BAD7 /* PKHUD+GitHub.swift */; };
 		B714277322B6C6C60017BAD7 /* UIVew+GitHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = B714277222B6C6C60017BAD7 /* UIVew+GitHub.swift */; };
+		B714278A22B6D0140017BAD7 /* PKHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B714277622B6D0140017BAD7 /* PKHUD.framework */; };
+		B714278B22B6D0140017BAD7 /* ActiveLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B714277722B6D0140017BAD7 /* ActiveLabel.framework */; };
+		B714278C22B6D0140017BAD7 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B714277822B6D0140017BAD7 /* Moya.framework */; };
+		B714278D22B6D0140017BAD7 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B714277922B6D0140017BAD7 /* ReactiveSwift.framework */; };
+		B714278E22B6D0140017BAD7 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B714277A22B6D0140017BAD7 /* RxCocoa.framework */; };
+		B714278F22B6D0140017BAD7 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B714277B22B6D0140017BAD7 /* RxTest.framework */; };
+		B714279022B6D0140017BAD7 /* Nuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B714277C22B6D0140017BAD7 /* Nuke.framework */; };
+		B714279122B6D0140017BAD7 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B714277D22B6D0140017BAD7 /* Alamofire.framework */; };
+		B714279222B6D0140017BAD7 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B714277E22B6D0140017BAD7 /* SnapKit.framework */; };
+		B714279322B6D0140017BAD7 /* ReactiveMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B714277F22B6D0140017BAD7 /* ReactiveMoya.framework */; };
+		B714279422B6D0140017BAD7 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B714278022B6D0140017BAD7 /* RxBlocking.framework */; };
+		B714279522B6D0140017BAD7 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B714278122B6D0140017BAD7 /* Rswift.framework */; };
+		B714279622B6D0140017BAD7 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B714278222B6D0140017BAD7 /* KeychainAccess.framework */; };
+		B714279722B6D0140017BAD7 /* SwiftyUserDefaults.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B714278322B6D0140017BAD7 /* SwiftyUserDefaults.framework */; };
+		B714279822B6D0140017BAD7 /* RxAtomic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B714278422B6D0140017BAD7 /* RxAtomic.framework */; };
+		B714279922B6D0140017BAD7 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B714278522B6D0140017BAD7 /* RxSwift.framework */; };
+		B714279A22B6D0140017BAD7 /* Device.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B714278622B6D0140017BAD7 /* Device.framework */; };
+		B714279B22B6D0150017BAD7 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B714278722B6D0140017BAD7 /* Result.framework */; };
+		B714279C22B6D0150017BAD7 /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B714278822B6D0140017BAD7 /* RxMoya.framework */; };
+		B714279D22B6D0150017BAD7 /* NSObject_Rx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B714278922B6D0140017BAD7 /* NSObject_Rx.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +73,26 @@
 		B714276E22B6C5F40017BAD7 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
 		B714277022B6C69E0017BAD7 /* PKHUD+GitHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PKHUD+GitHub.swift"; sourceTree = "<group>"; };
 		B714277222B6C6C60017BAD7 /* UIVew+GitHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVew+GitHub.swift"; sourceTree = "<group>"; };
+		B714277622B6D0140017BAD7 /* PKHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PKHUD.framework; path = Carthage/Build/iOS/PKHUD.framework; sourceTree = "<group>"; };
+		B714277722B6D0140017BAD7 /* ActiveLabel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ActiveLabel.framework; path = Carthage/Build/iOS/ActiveLabel.framework; sourceTree = "<group>"; };
+		B714277822B6D0140017BAD7 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
+		B714277922B6D0140017BAD7 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
+		B714277A22B6D0140017BAD7 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		B714277B22B6D0140017BAD7 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
+		B714277C22B6D0140017BAD7 /* Nuke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nuke.framework; path = Carthage/Build/iOS/Nuke.framework; sourceTree = "<group>"; };
+		B714277D22B6D0140017BAD7 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		B714277E22B6D0140017BAD7 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		B714277F22B6D0140017BAD7 /* ReactiveMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveMoya.framework; path = Carthage/Build/iOS/ReactiveMoya.framework; sourceTree = "<group>"; };
+		B714278022B6D0140017BAD7 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		B714278122B6D0140017BAD7 /* Rswift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rswift.framework; path = Carthage/Build/iOS/Rswift.framework; sourceTree = "<group>"; };
+		B714278222B6D0140017BAD7 /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/iOS/KeychainAccess.framework; sourceTree = "<group>"; };
+		B714278322B6D0140017BAD7 /* SwiftyUserDefaults.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyUserDefaults.framework; path = Carthage/Build/iOS/SwiftyUserDefaults.framework; sourceTree = "<group>"; };
+		B714278422B6D0140017BAD7 /* RxAtomic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAtomic.framework; path = Carthage/Build/iOS/RxAtomic.framework; sourceTree = "<group>"; };
+		B714278522B6D0140017BAD7 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		B714278622B6D0140017BAD7 /* Device.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Device.framework; path = Carthage/Build/iOS/Device.framework; sourceTree = "<group>"; };
+		B714278722B6D0140017BAD7 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		B714278822B6D0140017BAD7 /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/iOS/RxMoya.framework; sourceTree = "<group>"; };
+		B714278922B6D0140017BAD7 /* NSObject_Rx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NSObject_Rx.framework; path = Carthage/Build/iOS/NSObject_Rx.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +100,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B714278A22B6D0140017BAD7 /* PKHUD.framework in Frameworks */,
+				B714278B22B6D0140017BAD7 /* ActiveLabel.framework in Frameworks */,
+				B714278C22B6D0140017BAD7 /* Moya.framework in Frameworks */,
+				B714278D22B6D0140017BAD7 /* ReactiveSwift.framework in Frameworks */,
+				B714278E22B6D0140017BAD7 /* RxCocoa.framework in Frameworks */,
+				B714278F22B6D0140017BAD7 /* RxTest.framework in Frameworks */,
+				B714279022B6D0140017BAD7 /* Nuke.framework in Frameworks */,
+				B714279122B6D0140017BAD7 /* Alamofire.framework in Frameworks */,
+				B714279222B6D0140017BAD7 /* SnapKit.framework in Frameworks */,
+				B714279322B6D0140017BAD7 /* ReactiveMoya.framework in Frameworks */,
+				B714279422B6D0140017BAD7 /* RxBlocking.framework in Frameworks */,
+				B714279522B6D0140017BAD7 /* Rswift.framework in Frameworks */,
+				B714279622B6D0140017BAD7 /* KeychainAccess.framework in Frameworks */,
+				B714279722B6D0140017BAD7 /* SwiftyUserDefaults.framework in Frameworks */,
+				B714279822B6D0140017BAD7 /* RxAtomic.framework in Frameworks */,
+				B714279922B6D0140017BAD7 /* RxSwift.framework in Frameworks */,
+				B714279A22B6D0140017BAD7 /* Device.framework in Frameworks */,
+				B714279B22B6D0150017BAD7 /* Result.framework in Frameworks */,
+				B714279C22B6D0150017BAD7 /* RxMoya.framework in Frameworks */,
+				B714279D22B6D0150017BAD7 /* NSObject_Rx.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +147,7 @@
 				B714274A22B6C17E0017BAD7 /* GitHubTests */,
 				B714275522B6C17E0017BAD7 /* GitHubUITests */,
 				B714273422B6C17C0017BAD7 /* Products */,
+				B714277522B6D0140017BAD7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -182,6 +243,33 @@
 			name = Splash;
 			sourceTree = "<group>";
 		};
+		B714277522B6D0140017BAD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B714277722B6D0140017BAD7 /* ActiveLabel.framework */,
+				B714277D22B6D0140017BAD7 /* Alamofire.framework */,
+				B714278622B6D0140017BAD7 /* Device.framework */,
+				B714278222B6D0140017BAD7 /* KeychainAccess.framework */,
+				B714277822B6D0140017BAD7 /* Moya.framework */,
+				B714278922B6D0140017BAD7 /* NSObject_Rx.framework */,
+				B714277C22B6D0140017BAD7 /* Nuke.framework */,
+				B714277622B6D0140017BAD7 /* PKHUD.framework */,
+				B714277F22B6D0140017BAD7 /* ReactiveMoya.framework */,
+				B714277922B6D0140017BAD7 /* ReactiveSwift.framework */,
+				B714278722B6D0140017BAD7 /* Result.framework */,
+				B714278122B6D0140017BAD7 /* Rswift.framework */,
+				B714278422B6D0140017BAD7 /* RxAtomic.framework */,
+				B714278022B6D0140017BAD7 /* RxBlocking.framework */,
+				B714277A22B6D0140017BAD7 /* RxCocoa.framework */,
+				B714278822B6D0140017BAD7 /* RxMoya.framework */,
+				B714278522B6D0140017BAD7 /* RxSwift.framework */,
+				B714277B22B6D0140017BAD7 /* RxTest.framework */,
+				B714277E22B6D0140017BAD7 /* SnapKit.framework */,
+				B714278322B6D0140017BAD7 /* SwiftyUserDefaults.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -192,6 +280,7 @@
 				B714272F22B6C17C0017BAD7 /* Sources */,
 				B714273022B6C17C0017BAD7 /* Frameworks */,
 				B714273122B6C17C0017BAD7 /* Resources */,
+				B714277422B6CE8B0017BAD7 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -308,6 +397,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B714277422B6CE8B0017BAD7 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/ActiveLabel.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Device.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/KeychainAccess.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Moya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/NSObject_Rx.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nuke.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/PKHUD.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveMoya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Rswift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxAtomic.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxMoya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxTest.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyUserDefaults.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B714272F22B6C17C0017BAD7 /* Sources */ = {
@@ -485,6 +615,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = GitHub/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -502,6 +636,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = GitHub/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
