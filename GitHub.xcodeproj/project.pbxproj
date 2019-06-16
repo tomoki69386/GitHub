@@ -49,6 +49,7 @@
 		B71427BD22B6E1360017BAD7 /* FollowingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71427BC22B6E1360017BAD7 /* FollowingViewController.swift */; };
 		B71427C122B6FDCE0017BAD7 /* BasicListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71427C022B6FDCE0017BAD7 /* BasicListTableViewCell.swift */; };
 		B71427C422B6FE3E0017BAD7 /* BasicListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B71427C322B6FE3E0017BAD7 /* BasicListTableViewCell.xib */; };
+		B71427C622B6FEA50017BAD7 /* FollowersDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71427C522B6FEA50017BAD7 /* FollowersDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +120,7 @@
 		B71427BC22B6E1360017BAD7 /* FollowingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingViewController.swift; sourceTree = "<group>"; };
 		B71427C022B6FDCE0017BAD7 /* BasicListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicListTableViewCell.swift; sourceTree = "<group>"; };
 		B71427C322B6FE3E0017BAD7 /* BasicListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicListTableViewCell.xib; sourceTree = "<group>"; };
+		B71427C522B6FEA50017BAD7 /* FollowersDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -334,6 +336,7 @@
 			children = (
 				B71427B722B6E0640017BAD7 /* Followers.storyboard */,
 				B71427B522B6E04D0017BAD7 /* FollowersViewController.swift */,
+				B71427C522B6FEA50017BAD7 /* FollowersDataSource.swift */,
 			);
 			path = Followers;
 			sourceTree = "<group>";
@@ -537,6 +540,7 @@
 				B71427AA22B6D4FA0017BAD7 /* ProfileViewController.swift in Sources */,
 				B714273722B6C17C0017BAD7 /* AppDelegate.swift in Sources */,
 				B71427B622B6E04D0017BAD7 /* FollowersViewController.swift in Sources */,
+				B71427C622B6FEA50017BAD7 /* FollowersDataSource.swift in Sources */,
 				B714276C22B6C5DC0017BAD7 /* SplashViewController.swift in Sources */,
 				B714277122B6C69E0017BAD7 /* PKHUD+GitHub.swift in Sources */,
 				B71427BD22B6E1360017BAD7 /* FollowingViewController.swift in Sources */,
