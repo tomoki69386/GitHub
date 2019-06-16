@@ -63,10 +63,6 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="1JB-r5-Bx4" id="AMo-Or-8k5"/>
-                            <outlet property="delegate" destination="1JB-r5-Bx4" id="Ge6-RO-2cE"/>
-                        </connections>
                     </tableView>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p7a-a3-BRB" userLabel="First Responder" sceneMemberID="firstResponder"/>

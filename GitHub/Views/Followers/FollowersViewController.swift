@@ -9,9 +9,14 @@
 import UIKit
 
 final class FollowersViewController: UITableViewController {
+    
+    private lazy var dataSource = FollowersDataSource(with: self.tableView)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.register(BasicListTableViewCell.nib, forCellReuseIdentifier: BasicListTableViewCell.name)
+        _ = dataSource
         navigationItem.title = "Followers"
     }
 }
