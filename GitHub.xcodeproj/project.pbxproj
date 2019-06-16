@@ -37,6 +37,8 @@
 		B714279B22B6D0150017BAD7 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B714278722B6D0140017BAD7 /* Result.framework */; };
 		B714279C22B6D0150017BAD7 /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B714278822B6D0140017BAD7 /* RxMoya.framework */; };
 		B714279D22B6D0150017BAD7 /* NSObject_Rx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B714278922B6D0140017BAD7 /* NSObject_Rx.framework */; };
+		B71427A322B6D1640017BAD7 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71427A222B6D1640017BAD7 /* TabBarController.swift */; };
+		B71427A522B6D1700017BAD7 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B71427A422B6D1700017BAD7 /* TabBar.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +95,8 @@
 		B714278722B6D0140017BAD7 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		B714278822B6D0140017BAD7 /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/iOS/RxMoya.framework; sourceTree = "<group>"; };
 		B714278922B6D0140017BAD7 /* NSObject_Rx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NSObject_Rx.framework; path = Carthage/Build/iOS/NSObject_Rx.framework; sourceTree = "<group>"; };
+		B71427A222B6D1640017BAD7 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		B71427A422B6D1700017BAD7 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +200,7 @@
 		B714276422B6C4A90017BAD7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B71427A122B6D1550017BAD7 /* TabBar */,
 				B714276D22B6C5E60017BAD7 /* Splash */,
 			);
 			name = Views;
@@ -268,6 +273,15 @@
 				B714278322B6D0140017BAD7 /* SwiftyUserDefaults.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B71427A122B6D1550017BAD7 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				B71427A222B6D1640017BAD7 /* TabBarController.swift */,
+				B71427A422B6D1700017BAD7 /* TabBar.storyboard */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -375,6 +389,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B71427A522B6D1700017BAD7 /* TabBar.storyboard in Resources */,
 				B714276A22B6C5370017BAD7 /* Info-dev.plist in Resources */,
 				B714274122B6C17E0017BAD7 /* LaunchScreen.storyboard in Resources */,
 				B714273E22B6C17E0017BAD7 /* Assets.xcassets in Resources */,
@@ -447,6 +462,7 @@
 				B714273722B6C17C0017BAD7 /* AppDelegate.swift in Sources */,
 				B714276C22B6C5DC0017BAD7 /* SplashViewController.swift in Sources */,
 				B714277122B6C69E0017BAD7 /* PKHUD+GitHub.swift in Sources */,
+				B71427A322B6D1640017BAD7 /* TabBarController.swift in Sources */,
 				B714277322B6C6C60017BAD7 /* UIVew+GitHub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
