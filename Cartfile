@@ -1,0 +1,15 @@
+github "Moya/Moya"
+github "Ekhoo/Device"
+github "mac-cain13/R.swift.Library" "v5.0.0.alpha.2"
+
+# UI
+github "kean/Nuke"
+github "optonaut/ActiveLabel.swift"
+github "tomoki69386/PKHUD"
+github "SnapKit/SnapKit"
+
+# Basic
+github "kishikawakatsumi/KeychainAccess"
+github "radex/SwiftyUserDefaults" "4.0.0-alpha.1"
+github "tomoki69386/NSObject-Rx"
+github "ReactiveX/RxSwift"
