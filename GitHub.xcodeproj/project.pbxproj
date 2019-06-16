@@ -22,12 +22,10 @@
 		B714278C22B6D0140017BAD7 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B714277822B6D0140017BAD7 /* Moya.framework */; };
 		B714278D22B6D0140017BAD7 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B714277922B6D0140017BAD7 /* ReactiveSwift.framework */; };
 		B714278E22B6D0140017BAD7 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B714277A22B6D0140017BAD7 /* RxCocoa.framework */; };
-		B714278F22B6D0140017BAD7 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B714277B22B6D0140017BAD7 /* RxTest.framework */; };
 		B714279022B6D0140017BAD7 /* Nuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B714277C22B6D0140017BAD7 /* Nuke.framework */; };
 		B714279122B6D0140017BAD7 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B714277D22B6D0140017BAD7 /* Alamofire.framework */; };
 		B714279222B6D0140017BAD7 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B714277E22B6D0140017BAD7 /* SnapKit.framework */; };
 		B714279322B6D0140017BAD7 /* ReactiveMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B714277F22B6D0140017BAD7 /* ReactiveMoya.framework */; };
-		B714279422B6D0140017BAD7 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B714278022B6D0140017BAD7 /* RxBlocking.framework */; };
 		B714279522B6D0140017BAD7 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B714278122B6D0140017BAD7 /* Rswift.framework */; };
 		B714279622B6D0140017BAD7 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B714278222B6D0140017BAD7 /* KeychainAccess.framework */; };
 		B714279722B6D0140017BAD7 /* SwiftyUserDefaults.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B714278322B6D0140017BAD7 /* SwiftyUserDefaults.framework */; };
@@ -43,7 +41,8 @@
 		B71427AA22B6D4FA0017BAD7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71427A922B6D4FA0017BAD7 /* ProfileViewController.swift */; };
 		B71427AC22B6D5080017BAD7 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71427AB22B6D5080017BAD7 /* ProfileViewModel.swift */; };
 		B71427AE22B6D50E0017BAD7 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71427AD22B6D50E0017BAD7 /* ProfileModel.swift */; };
-		B71427B122B6D67C0017BAD7 /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71427B022B6D67C0017BAD7 /* IconView.swift */; };
+		B71427B122B6D67C0017BAD7 /* IconViiewew.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71427B022B6D67C0017BAD7 /* IconViiewew.swift */; };
+		B71427B322B6D6F90017BAD7 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B71427B222B6D6F90017BAD7 /* Color.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,7 +105,8 @@
 		B71427A922B6D4FA0017BAD7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		B71427AB22B6D5080017BAD7 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		B71427AD22B6D50E0017BAD7 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
-		B71427B022B6D67C0017BAD7 /* IconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
+		B71427B022B6D67C0017BAD7 /* IconViiewew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconViiewew.swift; sourceTree = "<group>"; };
+		B71427B222B6D6F90017BAD7 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,12 +119,10 @@
 				B714278C22B6D0140017BAD7 /* Moya.framework in Frameworks */,
 				B714278D22B6D0140017BAD7 /* ReactiveSwift.framework in Frameworks */,
 				B714278E22B6D0140017BAD7 /* RxCocoa.framework in Frameworks */,
-				B714278F22B6D0140017BAD7 /* RxTest.framework in Frameworks */,
 				B714279022B6D0140017BAD7 /* Nuke.framework in Frameworks */,
 				B714279122B6D0140017BAD7 /* Alamofire.framework in Frameworks */,
 				B714279222B6D0140017BAD7 /* SnapKit.framework in Frameworks */,
 				B714279322B6D0140017BAD7 /* ReactiveMoya.framework in Frameworks */,
-				B714279422B6D0140017BAD7 /* RxBlocking.framework in Frameworks */,
 				B714279522B6D0140017BAD7 /* Rswift.framework in Frameworks */,
 				B714279622B6D0140017BAD7 /* KeychainAccess.framework in Frameworks */,
 				B714279722B6D0140017BAD7 /* SwiftyUserDefaults.framework in Frameworks */,
@@ -231,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				B714273D22B6C17E0017BAD7 /* Assets.xcassets */,
+				B71427B222B6D6F90017BAD7 /* Color.xcassets */,
 				B714273F22B6C17E0017BAD7 /* LaunchScreen.storyboard */,
 			);
 			name = Resources;
@@ -310,7 +309,7 @@
 		B71427AF22B6D6710017BAD7 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				B71427B022B6D67C0017BAD7 /* IconView.swift */,
+				B71427B022B6D67C0017BAD7 /* IconViiewew.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -424,6 +423,7 @@
 				B71427A522B6D1700017BAD7 /* TabBar.storyboard in Resources */,
 				B714276A22B6C5370017BAD7 /* Info-dev.plist in Resources */,
 				B714274122B6C17E0017BAD7 /* LaunchScreen.storyboard in Resources */,
+				B71427B322B6D6F90017BAD7 /* Color.xcassets in Resources */,
 				B714273E22B6C17E0017BAD7 /* Assets.xcassets in Resources */,
 				B714276F22B6C5F40017BAD7 /* Splash.storyboard in Resources */,
 			);
@@ -467,11 +467,9 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Rswift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxAtomic.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxMoya.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxTest.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyUserDefaults.framework",
 			);
@@ -495,7 +493,7 @@
 				B714273722B6C17C0017BAD7 /* AppDelegate.swift in Sources */,
 				B714276C22B6C5DC0017BAD7 /* SplashViewController.swift in Sources */,
 				B714277122B6C69E0017BAD7 /* PKHUD+GitHub.swift in Sources */,
-				B71427B122B6D67C0017BAD7 /* IconView.swift in Sources */,
+				B71427B122B6D67C0017BAD7 /* IconViiewew.swift in Sources */,
 				B71427A322B6D1640017BAD7 /* TabBarController.swift in Sources */,
 				B714277322B6C6C60017BAD7 /* UIVew+GitHub.swift in Sources */,
 				B71427AC22B6D5080017BAD7 /* ProfileViewModel.swift in Sources */,
