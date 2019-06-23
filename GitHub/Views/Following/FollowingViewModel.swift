@@ -13,8 +13,8 @@ class FollowingViewModel {
     
     private let disposeBag = DisposeBag()
     
-    private let _users = BehaviorRelay<[UserInformation]>(value: [])
-    var users: [UserInformation] { return _users.value }
+    private let _users = BehaviorRelay<[SummaryUserInformation]>(value: [])
+    var users: [SummaryUserInformation] { return _users.value }
     
     private let _errors = PublishSubject<Error>()
     var errors: Driver<Error> {
@@ -27,7 +27,7 @@ class FollowingViewModel {
         Observable
             .of(Observable.just(()))
             .merge()
-            .flatMap { _ -> Observable<[UserInformation]> in
+            .flatMap { _ -> Observable<[SummaryUserInformation]> in
                 return model.getFollowingUsers(of: username)
                     .asObservable()
                     .catchError { [weak self] error in

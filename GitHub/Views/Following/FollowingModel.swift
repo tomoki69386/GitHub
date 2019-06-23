@@ -10,12 +10,12 @@ import RxSwift
 import RxCocoa
 
 protocol FollowingModelProtocol {
-    func getFollowingUsers(of name: String) -> Single<[UserInformation]>
+    func getFollowingUsers(of name: String) -> Single<[SummaryUserInformation]>
 }
 
 final class FollowingModel: FollowingModelProtocol {
     let userInfoProvider = UserInfoProvider()
-    func getFollowingUsers(of name: String) -> Single<[UserInformation]> {
+    func getFollowingUsers(of name: String) -> Single<[SummaryUserInformation]> {
         return userInfoProvider.getFollowingUsers(of: name)
     }
 }

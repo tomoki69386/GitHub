@@ -13,7 +13,7 @@ import RxCocoa
 
 protocol UserInfoProviderProtocol {
     func getLoginUser() -> Single<UserInformation>
-    func getFollowingUsers(of name: String) -> Single<[UserInformation]>
+    func getFollowingUsers(of name: String) -> Single<[SummaryUserInformation]>
 }
 
 class UserInfoProvider: BaseProvider, UserInfoProviderProtocol {
@@ -39,15 +39,15 @@ class UserInfoProvider: BaseProvider, UserInfoProviderProtocol {
         }
     }
     
-    func getFollowingUsers(of name: String) -> Single<[UserInformation]> {
+    func getFollowingUsers(of name: String) -> Single<[SummaryUserInformation]> {
         return self.request(.following(name: name))
             .filterSuccessfulStatusCodes()
             .map { response in
                 let decoder = JSONDecoder()
-                let decodedData: [UserInformation]
+                let decodedData: [SummaryUserInformation]
                 
                 do {
-                    decodedData = try decoder.decode([UserInformation].self, from: response.data)
+                    decodedData = try decoder.decode([SummaryUserInformation].self, from: response.data)
                 } catch let error as DecodingError {
                     throw error
                 }
