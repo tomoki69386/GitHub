@@ -59,6 +59,7 @@
 		B76ED8EF22BF9D8B00C1E0AA /* UIImageView+GitHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76ED8EE22BF9D8B00C1E0AA /* UIImageView+GitHub.swift */; };
 		B76ED8F122BFA0A500C1E0AA /* FollowingDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76ED8F022BFA0A500C1E0AA /* FollowingDataSource.swift */; };
 		B76ED8F322BFA11900C1E0AA /* FollowingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76ED8F222BFA11900C1E0AA /* FollowingModel.swift */; };
+		B76ED8F522BFA37100C1E0AA /* FollowingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76ED8F422BFA37100C1E0AA /* FollowingViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +140,7 @@
 		B76ED8EE22BF9D8B00C1E0AA /* UIImageView+GitHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+GitHub.swift"; sourceTree = "<group>"; };
 		B76ED8F022BFA0A500C1E0AA /* FollowingDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingDataSource.swift; sourceTree = "<group>"; };
 		B76ED8F222BFA11900C1E0AA /* FollowingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingModel.swift; sourceTree = "<group>"; };
+		B76ED8F422BFA37100C1E0AA /* FollowingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -373,6 +375,7 @@
 				B71427BC22B6E1360017BAD7 /* FollowingViewController.swift */,
 				B76ED8F022BFA0A500C1E0AA /* FollowingDataSource.swift */,
 				B76ED8F222BFA11900C1E0AA /* FollowingModel.swift */,
+				B76ED8F422BFA37100C1E0AA /* FollowingViewModel.swift */,
 			);
 			path = Following;
 			sourceTree = "<group>";
@@ -599,6 +602,7 @@
 				B71427CD22B7017F0017BAD7 /* R.generated.swift in Sources */,
 				B76ED8EF22BF9D8B00C1E0AA /* UIImageView+GitHub.swift in Sources */,
 				B71427B622B6E04D0017BAD7 /* FollowersViewController.swift in Sources */,
+				B76ED8F522BFA37100C1E0AA /* FollowingViewModel.swift in Sources */,
 				B71427CA22B7005A0017BAD7 /* UIBarButtonItem+GitHub.swift in Sources */,
 				B71427D122B7047F0017BAD7 /* BaseProvider.swift in Sources */,
 				B71427C622B6FEA50017BAD7 /* FollowersDataSource.swift in Sources */,
