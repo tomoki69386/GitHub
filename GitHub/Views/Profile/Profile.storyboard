@@ -286,6 +286,12 @@
                             <outlet property="delegate" destination="c63-0f-hFe" id="pF0-Ve-hjw"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="followersButton" destination="RKd-PV-evf" id="Fll-vy-cuW"/>
+                        <outlet property="followingButton" destination="m5F-LP-XPT" id="Drj-uy-xmV"/>
+                        <outlet property="screenIdLabel" destination="cPv-jq-P4s" id="GFx-fM-dWN"/>
+                        <outlet property="usernameLabel" destination="CiX-II-zuj" id="ZhW-tl-myF"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tE8-J7-6HG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

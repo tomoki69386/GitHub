@@ -11,6 +11,12 @@ import NSObject_Rx
 
 class ProfileViewController: UITableViewController {
     
+    @IBOutlet private weak var avatarImageView: UIImageView!
+    @IBOutlet private weak var usernameLabel: UILabel!
+    @IBOutlet private weak var screenIdLabel: UILabel!
+    @IBOutlet private weak var followersButton: UIButton!
+    @IBOutlet private weak var followingButton: UIButton!
+    
     private let viewModel = ProfileViewModel(model: ProfileModel())
 
     override func viewDidLoad() {
@@ -20,19 +26,13 @@ class ProfileViewController: UITableViewController {
             print(error)
         }).disposed(by: rx.disposeBag)
         
-        viewModel.user.drive(onNext: { user in
-            print(user)
+        viewModel.user.drive(onNext: { [weak self] user in
+            self?.usernameLabel.text = user.name
+            self?.screenIdLabel.text = user.screenId
         }).disposed(by: rx.disposeBag)
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-    }
-    
-    @IBAction private func followersButtonDidTapped(sender: UIButton) {
-    }
-    
-    @IBAction private func followingButtonDidTapped(sender: UIButton) {
-        
     }
 }

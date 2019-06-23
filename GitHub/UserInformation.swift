@@ -44,6 +44,7 @@ import Foundation
 
 struct UserInformation: Codable {
     var id = 0
+    var screenId = ""
     var avatarURL = ""
     var name = ""
     var description = ""
@@ -53,6 +54,7 @@ struct UserInformation: Codable {
     
     enum CodingKeys: String, CodingKey {
         case id
+        case screenId = "login"
         case avatarURL = "avatar_url"
         case name
         case description = "bio"
