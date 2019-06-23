@@ -57,6 +57,11 @@
 		B76ED8EA22BF8FAE00C1E0AA /* UserInfoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76ED8E922BF8FAE00C1E0AA /* UserInfoProvider.swift */; };
 		B76ED8ED22BF96F600C1E0AA /* UserInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76ED8EC22BF96F600C1E0AA /* UserInformation.swift */; };
 		B76ED8EF22BF9D8B00C1E0AA /* UIImageView+GitHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76ED8EE22BF9D8B00C1E0AA /* UIImageView+GitHub.swift */; };
+		B76ED8F122BFA0A500C1E0AA /* FollowingDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76ED8F022BFA0A500C1E0AA /* FollowingDataSource.swift */; };
+		B76ED8F322BFA11900C1E0AA /* FollowingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76ED8F222BFA11900C1E0AA /* FollowingModel.swift */; };
+		B76ED8F522BFA37100C1E0AA /* FollowingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76ED8F422BFA37100C1E0AA /* FollowingViewModel.swift */; };
+		B76ED8F722BFBF0F00C1E0AA /* SummaryUserInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76ED8F622BFBF0F00C1E0AA /* SummaryUserInformation.swift */; };
+		B76ED8FA22BFC29F00C1E0AA /* FollowingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76ED8F922BFC29F00C1E0AA /* FollowingTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +140,11 @@
 		B76ED8E922BF8FAE00C1E0AA /* UserInfoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoProvider.swift; sourceTree = "<group>"; };
 		B76ED8EC22BF96F600C1E0AA /* UserInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformation.swift; sourceTree = "<group>"; };
 		B76ED8EE22BF9D8B00C1E0AA /* UIImageView+GitHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+GitHub.swift"; sourceTree = "<group>"; };
+		B76ED8F022BFA0A500C1E0AA /* FollowingDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingDataSource.swift; sourceTree = "<group>"; };
+		B76ED8F222BFA11900C1E0AA /* FollowingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingModel.swift; sourceTree = "<group>"; };
+		B76ED8F422BFA37100C1E0AA /* FollowingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingViewModel.swift; sourceTree = "<group>"; };
+		B76ED8F622BFBF0F00C1E0AA /* SummaryUserInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryUserInformation.swift; sourceTree = "<group>"; };
+		B76ED8F922BFC29F00C1E0AA /* FollowingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,9 +215,9 @@
 		B714273522B6C17C0017BAD7 /* GitHub */ = {
 			isa = PBXGroup;
 			children = (
-				B76ED8EB22BF96EF00C1E0AA /* Models */,
 				B714276722B6C4C60017BAD7 /* App */,
 				B714276522B6C4AE0017BAD7 /* Extensions */,
+				B76ED8EB22BF96EF00C1E0AA /* Models */,
 				B714276822B6C4D20017BAD7 /* Networks */,
 				B714276622B6C4B40017BAD7 /* Resources */,
 				B714276422B6C4A90017BAD7 /* Views */,
@@ -220,6 +230,7 @@
 		B714274A22B6C17E0017BAD7 /* GitHubTests */ = {
 			isa = PBXGroup;
 			children = (
+				B76ED8F822BFC28B00C1E0AA /* Following */,
 				B714274B22B6C17E0017BAD7 /* GitHubTests.swift */,
 				B714274D22B6C17E0017BAD7 /* Info.plist */,
 			);
@@ -252,8 +263,8 @@
 			isa = PBXGroup;
 			children = (
 				B714277022B6C69E0017BAD7 /* PKHUD+GitHub.swift */,
-				B76ED8EE22BF9D8B00C1E0AA /* UIImageView+GitHub.swift */,
 				B71427C922B7005A0017BAD7 /* UIBarButtonItem+GitHub.swift */,
+				B76ED8EE22BF9D8B00C1E0AA /* UIImageView+GitHub.swift */,
 				B714277222B6C6C60017BAD7 /* UIVew+GitHub.swift */,
 			);
 			path = Extensions;
@@ -366,7 +377,10 @@
 			isa = PBXGroup;
 			children = (
 				B71427BA22B6E1270017BAD7 /* Following.storyboard */,
+				B76ED8F022BFA0A500C1E0AA /* FollowingDataSource.swift */,
+				B76ED8F222BFA11900C1E0AA /* FollowingModel.swift */,
 				B71427BC22B6E1360017BAD7 /* FollowingViewController.swift */,
+				B76ED8F422BFA37100C1E0AA /* FollowingViewModel.swift */,
 			);
 			path = Following;
 			sourceTree = "<group>";
@@ -384,8 +398,17 @@
 			isa = PBXGroup;
 			children = (
 				B76ED8EC22BF96F600C1E0AA /* UserInformation.swift */,
+				B76ED8F622BFBF0F00C1E0AA /* SummaryUserInformation.swift */,
 			);
-			name = Models;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B76ED8F822BFC28B00C1E0AA /* Following */ = {
+			isa = PBXGroup;
+			children = (
+				B76ED8F922BFC29F00C1E0AA /* FollowingTests.swift */,
+			);
+			path = Following;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,6 +440,7 @@
 				B714274322B6C17E0017BAD7 /* Sources */,
 				B714274422B6C17E0017BAD7 /* Frameworks */,
 				B714274522B6C17E0017BAD7 /* Resources */,
+				B76ED8FB22BFC2B300C1E0AA /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -578,6 +602,25 @@
 			shellPath = /bin/sh;
 			shellScript = "echo $SRCROOT\n\"$SRCROOT/bin/rswift\" generate \"$SRCROOT\"\n";
 		};
+		B76ED8FB22BFC2B300C1E0AA /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxTest.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -585,6 +628,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B76ED8F122BFA0A500C1E0AA /* FollowingDataSource.swift in Sources */,
 				B71427AA22B6D4FA0017BAD7 /* ProfileViewController.swift in Sources */,
 				B76ED8EA22BF8FAE00C1E0AA /* UserInfoProvider.swift in Sources */,
 				B76ED8ED22BF96F600C1E0AA /* UserInformation.swift in Sources */,
@@ -592,13 +636,16 @@
 				B71427CD22B7017F0017BAD7 /* R.generated.swift in Sources */,
 				B76ED8EF22BF9D8B00C1E0AA /* UIImageView+GitHub.swift in Sources */,
 				B71427B622B6E04D0017BAD7 /* FollowersViewController.swift in Sources */,
+				B76ED8F522BFA37100C1E0AA /* FollowingViewModel.swift in Sources */,
 				B71427CA22B7005A0017BAD7 /* UIBarButtonItem+GitHub.swift in Sources */,
+				B76ED8F722BFBF0F00C1E0AA /* SummaryUserInformation.swift in Sources */,
 				B71427D122B7047F0017BAD7 /* BaseProvider.swift in Sources */,
 				B71427C622B6FEA50017BAD7 /* FollowersDataSource.swift in Sources */,
 				B714276C22B6C5DC0017BAD7 /* SplashViewController.swift in Sources */,
 				B71427CF22B702730017BAD7 /* GithubAPI.swift in Sources */,
 				B714277122B6C69E0017BAD7 /* PKHUD+GitHub.swift in Sources */,
 				B71427BD22B6E1360017BAD7 /* FollowingViewController.swift in Sources */,
+				B76ED8F322BFA11900C1E0AA /* FollowingModel.swift in Sources */,
 				B71427B122B6D67C0017BAD7 /* ImageView.swift in Sources */,
 				B71427A322B6D1640017BAD7 /* TabBarController.swift in Sources */,
 				B71427C122B6FDCE0017BAD7 /* BasicListTableViewCell.swift in Sources */,
@@ -613,6 +660,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B714274C22B6C17E0017BAD7 /* GitHubTests.swift in Sources */,
+				B76ED8FA22BFC29F00C1E0AA /* FollowingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -817,17 +865,22 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = GitHubTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tomoki-sun.GitHubTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitHub.app/GitHub";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitHub-dev.app/GitHub-dev";
 			};
 			name = Debug;
 		};
@@ -838,6 +891,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = GitHubTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -848,7 +905,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitHub.app/GitHub";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitHub-dev.app/GitHub-dev";
 			};
 			name = Release;
 		};

@@ -13,8 +13,9 @@ final class BasicListTableViewCell: UITableViewCell {
     @IBOutlet private weak var iconImageView: ImageView!
     @IBOutlet private weak var bodyLabel: UILabel!
     
-    func update(url: String, body: String) {
+    func update(url: String?, body: String) {
         bodyLabel.text = body
+        iconImageView.setImage(with: url)
     }
     
     override func awakeFromNib() {

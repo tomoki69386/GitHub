@@ -12,6 +12,7 @@ import Alamofire
 
 enum GithubAPI {
     case getMe
+    case following(name: String)
 }
 
 extension GithubAPI: TargetType {
@@ -26,12 +27,14 @@ extension GithubAPI: TargetType {
         switch self {
         case .getMe:
             return "/users/tomoki69386"
+        case .following(let name):
+            return "/users/\(name)/following"
         }
     }
     
     var method: Moya.Method {
         switch self {
-        case .getMe:
+        case .getMe, .following:
             return .get
         }
     }
