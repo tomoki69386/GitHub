@@ -63,6 +63,7 @@
 		B76ED8F722BFBF0F00C1E0AA /* SummaryUserInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76ED8F622BFBF0F00C1E0AA /* SummaryUserInformation.swift */; };
 		B76ED8FA22BFC29F00C1E0AA /* FollowingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76ED8F922BFC29F00C1E0AA /* FollowingTests.swift */; };
 		B76ED8FE22BFC94D00C1E0AA /* FollowersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76ED8FD22BFC94D00C1E0AA /* FollowersModel.swift */; };
+		B76ED90022BFC9A100C1E0AA /* FollowersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76ED8FF22BFC9A100C1E0AA /* FollowersViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +148,7 @@
 		B76ED8F622BFBF0F00C1E0AA /* SummaryUserInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryUserInformation.swift; sourceTree = "<group>"; };
 		B76ED8F922BFC29F00C1E0AA /* FollowingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingTests.swift; sourceTree = "<group>"; };
 		B76ED8FD22BFC94D00C1E0AA /* FollowersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersModel.swift; sourceTree = "<group>"; };
+		B76ED8FF22BFC9A100C1E0AA /* FollowersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -372,6 +374,7 @@
 				B71427C522B6FEA50017BAD7 /* FollowersDataSource.swift */,
 				B71427B522B6E04D0017BAD7 /* FollowersViewController.swift */,
 				B76ED8FD22BFC94D00C1E0AA /* FollowersModel.swift */,
+				B76ED8FF22BFC9A100C1E0AA /* FollowersViewModel.swift */,
 			);
 			path = Followers;
 			sourceTree = "<group>";
@@ -643,6 +646,7 @@
 				B76ED8F522BFA37100C1E0AA /* FollowingViewModel.swift in Sources */,
 				B71427CA22B7005A0017BAD7 /* UIBarButtonItem+GitHub.swift in Sources */,
 				B76ED8F722BFBF0F00C1E0AA /* SummaryUserInformation.swift in Sources */,
+				B76ED90022BFC9A100C1E0AA /* FollowersViewModel.swift in Sources */,
 				B71427D122B7047F0017BAD7 /* BaseProvider.swift in Sources */,
 				B71427C622B6FEA50017BAD7 /* FollowersDataSource.swift in Sources */,
 				B714276C22B6C5DC0017BAD7 /* SplashViewController.swift in Sources */,
