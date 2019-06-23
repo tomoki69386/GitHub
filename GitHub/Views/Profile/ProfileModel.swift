@@ -7,5 +7,16 @@
 //
 
 import RxSwift
+import RxCocoa
 
+protocol ProfileModelProtocol {
+    func getLoginUser() -> Single<UserInformation>
+}
 
+final class ProfileModel: ProfileModelProtocol {
+    let userInfoProvider = UserInfoProvider()
+    
+    func getLoginUser() -> Single<UserInformation> {
+        return userInfoProvider.getLoginUser()
+    }
+}

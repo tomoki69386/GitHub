@@ -52,6 +52,11 @@
 		B71427C622B6FEA50017BAD7 /* FollowersDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71427C522B6FEA50017BAD7 /* FollowersDataSource.swift */; };
 		B71427CA22B7005A0017BAD7 /* UIBarButtonItem+GitHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71427C922B7005A0017BAD7 /* UIBarButtonItem+GitHub.swift */; };
 		B71427CD22B7017F0017BAD7 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71427CC22B7017F0017BAD7 /* R.generated.swift */; };
+		B71427CF22B702730017BAD7 /* GithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71427CE22B702730017BAD7 /* GithubAPI.swift */; };
+		B71427D122B7047F0017BAD7 /* BaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71427D022B7047F0017BAD7 /* BaseProvider.swift */; };
+		B76ED8EA22BF8FAE00C1E0AA /* UserInfoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76ED8E922BF8FAE00C1E0AA /* UserInfoProvider.swift */; };
+		B76ED8ED22BF96F600C1E0AA /* UserInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76ED8EC22BF96F600C1E0AA /* UserInformation.swift */; };
+		B76ED8EF22BF9D8B00C1E0AA /* UIImageView+GitHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76ED8EE22BF9D8B00C1E0AA /* UIImageView+GitHub.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +130,11 @@
 		B71427C522B6FEA50017BAD7 /* FollowersDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersDataSource.swift; sourceTree = "<group>"; };
 		B71427C922B7005A0017BAD7 /* UIBarButtonItem+GitHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+GitHub.swift"; sourceTree = "<group>"; };
 		B71427CC22B7017F0017BAD7 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		B71427CE22B702730017BAD7 /* GithubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPI.swift; sourceTree = "<group>"; };
+		B71427D022B7047F0017BAD7 /* BaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProvider.swift; sourceTree = "<group>"; };
+		B76ED8E922BF8FAE00C1E0AA /* UserInfoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoProvider.swift; sourceTree = "<group>"; };
+		B76ED8EC22BF96F600C1E0AA /* UserInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformation.swift; sourceTree = "<group>"; };
+		B76ED8EE22BF9D8B00C1E0AA /* UIImageView+GitHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+GitHub.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,12 +183,12 @@
 		B714272A22B6C17C0017BAD7 = {
 			isa = PBXGroup;
 			children = (
-				B71427CC22B7017F0017BAD7 /* R.generated.swift */,
 				B714277522B6D0140017BAD7 /* Frameworks */,
 				B714273522B6C17C0017BAD7 /* GitHub */,
 				B714274A22B6C17E0017BAD7 /* GitHubTests */,
 				B714275522B6C17E0017BAD7 /* GitHubUITests */,
 				B714273422B6C17C0017BAD7 /* Products */,
+				B71427CC22B7017F0017BAD7 /* R.generated.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -195,6 +205,7 @@
 		B714273522B6C17C0017BAD7 /* GitHub */ = {
 			isa = PBXGroup;
 			children = (
+				B76ED8EB22BF96EF00C1E0AA /* Models */,
 				B714276722B6C4C60017BAD7 /* App */,
 				B714276522B6C4AE0017BAD7 /* Extensions */,
 				B714276822B6C4D20017BAD7 /* Networks */,
@@ -241,8 +252,9 @@
 			isa = PBXGroup;
 			children = (
 				B714277022B6C69E0017BAD7 /* PKHUD+GitHub.swift */,
-				B714277222B6C6C60017BAD7 /* UIVew+GitHub.swift */,
+				B76ED8EE22BF9D8B00C1E0AA /* UIImageView+GitHub.swift */,
 				B71427C922B7005A0017BAD7 /* UIBarButtonItem+GitHub.swift */,
+				B714277222B6C6C60017BAD7 /* UIVew+GitHub.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -268,6 +280,9 @@
 		B714276822B6C4D20017BAD7 /* Networks */ = {
 			isa = PBXGroup;
 			children = (
+				B71427D022B7047F0017BAD7 /* BaseProvider.swift */,
+				B71427CE22B702730017BAD7 /* GithubAPI.swift */,
+				B76ED8E922BF8FAE00C1E0AA /* UserInfoProvider.swift */,
 			);
 			path = Networks;
 			sourceTree = "<group>";
@@ -331,8 +346,8 @@
 		B71427AF22B6D6710017BAD7 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				B71427B022B6D67C0017BAD7 /* ImageView.swift */,
 				B71427C222B6FE370017BAD7 /* BasicListTableViewCell */,
+				B71427B022B6D67C0017BAD7 /* ImageView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -341,8 +356,8 @@
 			isa = PBXGroup;
 			children = (
 				B71427B722B6E0640017BAD7 /* Followers.storyboard */,
-				B71427B522B6E04D0017BAD7 /* FollowersViewController.swift */,
 				B71427C522B6FEA50017BAD7 /* FollowersDataSource.swift */,
+				B71427B522B6E04D0017BAD7 /* FollowersViewController.swift */,
 			);
 			path = Followers;
 			sourceTree = "<group>";
@@ -362,7 +377,15 @@
 				B71427C022B6FDCE0017BAD7 /* BasicListTableViewCell.swift */,
 				B71427C322B6FE3E0017BAD7 /* BasicListTableViewCell.xib */,
 			);
-			name = BasicListTableViewCell;
+			path = BasicListTableViewCell;
+			sourceTree = "<group>";
+		};
+		B76ED8EB22BF96EF00C1E0AA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B76ED8EC22BF96F600C1E0AA /* UserInformation.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -563,12 +586,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				B71427AA22B6D4FA0017BAD7 /* ProfileViewController.swift in Sources */,
+				B76ED8EA22BF8FAE00C1E0AA /* UserInfoProvider.swift in Sources */,
+				B76ED8ED22BF96F600C1E0AA /* UserInformation.swift in Sources */,
 				B714273722B6C17C0017BAD7 /* AppDelegate.swift in Sources */,
 				B71427CD22B7017F0017BAD7 /* R.generated.swift in Sources */,
+				B76ED8EF22BF9D8B00C1E0AA /* UIImageView+GitHub.swift in Sources */,
 				B71427B622B6E04D0017BAD7 /* FollowersViewController.swift in Sources */,
 				B71427CA22B7005A0017BAD7 /* UIBarButtonItem+GitHub.swift in Sources */,
+				B71427D122B7047F0017BAD7 /* BaseProvider.swift in Sources */,
 				B71427C622B6FEA50017BAD7 /* FollowersDataSource.swift in Sources */,
 				B714276C22B6C5DC0017BAD7 /* SplashViewController.swift in Sources */,
+				B71427CF22B702730017BAD7 /* GithubAPI.swift in Sources */,
 				B714277122B6C69E0017BAD7 /* PKHUD+GitHub.swift in Sources */,
 				B71427BD22B6E1360017BAD7 /* FollowingViewController.swift in Sources */,
 				B71427B122B6D67C0017BAD7 /* ImageView.swift in Sources */,
@@ -788,6 +816,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = GitHubTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -808,6 +837,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = GitHubTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
