@@ -9,9 +9,7 @@
 import UIKit
 
 class FollowingDataSource: NSObject, UITableViewDataSource {
-    
     private var viewModel: FollowingViewModel!
-    
     convenience init(with tableView: UITableView, viewModel: FollowingViewModel) {
         self.init()
         tableView.dataSource = self
