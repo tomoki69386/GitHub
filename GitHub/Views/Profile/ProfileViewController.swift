@@ -40,6 +40,12 @@ class ProfileViewController: UITableViewController {
             let target = FollowingViewController.make(username)
             self?.navigationController?.pushViewController(target, animated: true)
         }).disposed(by: rx.disposeBag)
+        
+        followersButton.rx.tap.asDriver().drive(onNext: { [weak self] in
+            guard let username = self?.screenIdLabel.text else { return }
+            let target = FollowersViewController.make(username: username)
+            self?.navigationController?.pushViewController(target, animated: true)
+        }).disposed(by: rx.disposeBag)
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

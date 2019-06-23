@@ -7,10 +7,18 @@
 //
 
 import UIKit
+import PKHUD
 
 final class FollowersViewController: UITableViewController {
     
-    private lazy var dataSource = FollowersDataSource(with: self.tableView)
+    fileprivate var viewModel: FollowersViewModel!
+    private lazy var dataSource = FollowersDataSource(with: self.tableView, viewModel: self.viewModel)
+    
+    static func make(username: String) -> FollowersViewController {
+        let vc = R.storyboard.followers.instantiateInitialViewController()!
+        vc.viewModel = FollowersViewModel(username: username, model: FollowersModel())
+        return vc
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,5 +26,13 @@ final class FollowersViewController: UITableViewController {
         tableView.register(BasicListTableViewCell.nib, forCellReuseIdentifier: BasicListTableViewCell.name)
         _ = dataSource
         navigationItem.title = "Followers"
+        
+        viewModel.reloadData.drive(onNext: { [weak self] in
+            self?.tableView.reloadData()
+        }).disposed(by: rx.disposeBag)
+        
+        viewModel.errors.drive(onNext: { error in
+            HUD.flashMessage(.label(error.localizedDescription))
+        }).disposed(by: rx.disposeBag)
     }
 }
