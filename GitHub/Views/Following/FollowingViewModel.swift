@@ -21,8 +21,14 @@ class FollowingViewModel {
         return _errors.asDriver(onErrorDriveWith: .empty())
     }
     
+    var reloadData: Driver<Void> = .empty()
+    
     init(username: String,
          model: FollowingModelProtocol) {
+        
+        self.reloadData = _users
+            .map { _ in }
+            .asDriver(onErrorDriveWith: .empty())
         
         Observable
             .of(Observable.just(()))

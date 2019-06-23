@@ -23,11 +23,16 @@ class FollowingViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.register(BasicListTableViewCell.nib, forCellReuseIdentifier: BasicListTableViewCell.name)
         _ = dataSource
         navigationItem.title = "Following"
         
         viewModel.errors.drive(onNext: { error in
             HUD.flashMessage(.label(error.localizedDescription))
+        }).disposed(by: rx.disposeBag)
+        
+        viewModel.reloadData.drive(onNext: { [weak self] in
+            self?.tableView.reloadData()
         }).disposed(by: rx.disposeBag)
     }
 }
