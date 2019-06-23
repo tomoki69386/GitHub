@@ -11,7 +11,7 @@ import Moya
 import Alamofire
 
 enum GithubAPI {
-    
+    case getMe
 }
 
 extension GithubAPI: TargetType {
@@ -19,15 +19,21 @@ extension GithubAPI: TargetType {
         return ["": ""]
     }
     var baseURL: URL {
-        return URL(string: "")!
+        return URL(string: "https://api.github.com")!
     }
     
     var path: String {
-        return ""
+        switch self {
+        case .getMe:
+            return "/users/tomoki693"
+        }
     }
     
     var method: Moya.Method {
-        return .get
+        switch self {
+        case .getMe:
+            return .get
+        }
     }
     
     var sampleData: Data {
