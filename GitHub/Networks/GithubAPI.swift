@@ -25,7 +25,7 @@ extension GithubAPI: TargetType {
     var path: String {
         switch self {
         case .getMe:
-            return "/users/tomoki693"
+            return "/users/tomoki69386"
         }
     }
     

@@ -11,18 +11,30 @@ import RxMoya
 import RxSwift
 import RxCocoa
 
-class UserInfoProvider: BaseProvider {
+protocol UserInfoProviderProtocol {
+    func getLoginUser() -> Single<UserInformation>
+}
+
+class UserInfoProvider: BaseProvider, UserInfoProviderProtocol {
     func request(_ token: GithubAPI) -> Single<Moya.Response> {
         return super.rx
             .request(token)
             .observeOn(ConcurrentDispatchQueueScheduler(qos: .utility))
     }
     
-    func getLoginUser() -> Single<String> {
+    func getLoginUser() -> Single<UserInformation> {
         return self.request(.getMe)
-        .filterSuccessfulStatusCodes()
+            .filterSuccessfulStatusCodes()
             .map { response in
                 let decoder = JSONDecoder()
+                let decodedData: UserInformation
+                
+                do {
+                    decodedData = try decoder.decode(UserInformation.self, from: response.data)
+                } catch let error as DecodingError {
+                    throw error
+                }
+                return decodedData
         }
     }
 }
