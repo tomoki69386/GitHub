@@ -10,9 +10,19 @@ import UIKit
 
 class FollowingViewController: UITableViewController {
     
+    fileprivate var viewModel: FollowingViewModel!
+    private lazy var dataSource = FollowingDataSource(with: self.tableView, viewModel: self.viewModel)
+    
+    static func make(_ username: String) -> FollowingViewController {
+        let vc = R.storyboard.following.instantiateInitialViewController()!
+        vc.viewModel = FollowingViewModel(username: username, model: FollowingModel())
+        return vc
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        _ = dataSource
         navigationItem.title = "Following"
     }
 }

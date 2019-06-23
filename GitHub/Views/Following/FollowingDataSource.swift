@@ -9,20 +9,25 @@
 import UIKit
 
 class FollowingDataSource: NSObject, UITableViewDataSource {
-    convenience init(with tableView: UITableView) {
+    
+    private var viewModel: FollowingViewModel!
+    
+    convenience init(with tableView: UITableView, viewModel: FollowingViewModel) {
         self.init()
         tableView.dataSource = self
+        self.viewModel = viewModel
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return viewModel.users.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: BasicListTableViewCell.name) as? BasicListTableViewCell else {
             fatalError("Invalid cell")
         }
-        cell.update(url: "hog", body: "List")
+        let user = viewModel.users[indexPath.row]
+        cell.update(url: user.avatarURL, body: user.screenId)
         return cell
     }
 }

@@ -34,6 +34,12 @@ class ProfileViewController: UITableViewController {
             self?.followersButton.setTitle("\(user.followers)Followers", for: .normal)
             self?.followingButton.setTitle("\(user.following)Following", for: .normal)
         }).disposed(by: rx.disposeBag)
+        
+        followingButton.rx.tap.asDriver().drive(onNext: { [weak self] in
+            guard let username = self?.screenIdLabel.text else { return }
+            let target = FollowingViewController.make(username)
+            self?.navigationController?.pushViewController(target, animated: true)
+        }).disposed(by: rx.disposeBag)
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
