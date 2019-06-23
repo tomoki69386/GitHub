@@ -17,7 +17,7 @@ class FollowingViewModel {
     var users: [UserInformation] { return _users.value }
     
     private let _errors = PublishSubject<Error>()
-    var error: Driver<Error> {
+    var errors: Driver<Error> {
         return _errors.asDriver(onErrorDriveWith: .empty())
     }
     

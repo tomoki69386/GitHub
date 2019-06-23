@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PKHUD
 
 class FollowingViewController: UITableViewController {
     
@@ -24,5 +25,9 @@ class FollowingViewController: UITableViewController {
         
         _ = dataSource
         navigationItem.title = "Following"
+        
+        viewModel.errors.drive(onNext: { error in
+            HUD.flashMessage(.label(error.localizedDescription))
+        }).disposed(by: rx.disposeBag)
     }
 }
