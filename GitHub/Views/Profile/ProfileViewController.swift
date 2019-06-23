@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PKHUD
 import NSObject_Rx
 
 class ProfileViewController: UITableViewController {
@@ -27,8 +28,11 @@ class ProfileViewController: UITableViewController {
         }).disposed(by: rx.disposeBag)
         
         viewModel.user.drive(onNext: { [weak self] user in
+            self?.avatarImageView.setImage(with: user.avatarURL)
             self?.usernameLabel.text = user.name
             self?.screenIdLabel.text = user.screenId
+            self?.followersButton.setTitle("\(user.followers)Followers", for: .normal)
+            self?.followingButton.setTitle("\(user.following)Following", for: .normal)
         }).disposed(by: rx.disposeBag)
     }
     

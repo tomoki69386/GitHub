@@ -287,6 +287,7 @@
                         </connections>
                     </tableView>
                     <connections>
+                        <outlet property="avatarImageView" destination="0DN-87-lWF" id="SON-NE-05t"/>
                         <outlet property="followersButton" destination="RKd-PV-evf" id="Fll-vy-cuW"/>
                         <outlet property="followingButton" destination="m5F-LP-XPT" id="Drj-uy-xmV"/>
                         <outlet property="screenIdLabel" destination="cPv-jq-P4s" id="GFx-fM-dWN"/>
