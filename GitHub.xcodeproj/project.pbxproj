@@ -58,6 +58,7 @@
 		B76ED8ED22BF96F600C1E0AA /* UserInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76ED8EC22BF96F600C1E0AA /* UserInformation.swift */; };
 		B76ED8EF22BF9D8B00C1E0AA /* UIImageView+GitHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76ED8EE22BF9D8B00C1E0AA /* UIImageView+GitHub.swift */; };
 		B76ED8F122BFA0A500C1E0AA /* FollowingDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76ED8F022BFA0A500C1E0AA /* FollowingDataSource.swift */; };
+		B76ED8F322BFA11900C1E0AA /* FollowingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76ED8F222BFA11900C1E0AA /* FollowingModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +138,7 @@
 		B76ED8EC22BF96F600C1E0AA /* UserInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformation.swift; sourceTree = "<group>"; };
 		B76ED8EE22BF9D8B00C1E0AA /* UIImageView+GitHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+GitHub.swift"; sourceTree = "<group>"; };
 		B76ED8F022BFA0A500C1E0AA /* FollowingDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingDataSource.swift; sourceTree = "<group>"; };
+		B76ED8F222BFA11900C1E0AA /* FollowingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -370,6 +372,7 @@
 				B71427BA22B6E1270017BAD7 /* Following.storyboard */,
 				B71427BC22B6E1360017BAD7 /* FollowingViewController.swift */,
 				B76ED8F022BFA0A500C1E0AA /* FollowingDataSource.swift */,
+				B76ED8F222BFA11900C1E0AA /* FollowingModel.swift */,
 			);
 			path = Following;
 			sourceTree = "<group>";
@@ -603,6 +606,7 @@
 				B71427CF22B702730017BAD7 /* GithubAPI.swift in Sources */,
 				B714277122B6C69E0017BAD7 /* PKHUD+GitHub.swift in Sources */,
 				B71427BD22B6E1360017BAD7 /* FollowingViewController.swift in Sources */,
+				B76ED8F322BFA11900C1E0AA /* FollowingModel.swift in Sources */,
 				B71427B122B6D67C0017BAD7 /* ImageView.swift in Sources */,
 				B71427A322B6D1640017BAD7 /* TabBarController.swift in Sources */,
 				B71427C122B6FDCE0017BAD7 /* BasicListTableViewCell.swift in Sources */,
