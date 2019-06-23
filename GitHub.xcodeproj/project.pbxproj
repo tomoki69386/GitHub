@@ -61,6 +61,7 @@
 		B76ED8F322BFA11900C1E0AA /* FollowingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76ED8F222BFA11900C1E0AA /* FollowingModel.swift */; };
 		B76ED8F522BFA37100C1E0AA /* FollowingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76ED8F422BFA37100C1E0AA /* FollowingViewModel.swift */; };
 		B76ED8F722BFBF0F00C1E0AA /* SummaryUserInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76ED8F622BFBF0F00C1E0AA /* SummaryUserInformation.swift */; };
+		B76ED8FA22BFC29F00C1E0AA /* FollowingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76ED8F922BFC29F00C1E0AA /* FollowingTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,6 +144,7 @@
 		B76ED8F222BFA11900C1E0AA /* FollowingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingModel.swift; sourceTree = "<group>"; };
 		B76ED8F422BFA37100C1E0AA /* FollowingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingViewModel.swift; sourceTree = "<group>"; };
 		B76ED8F622BFBF0F00C1E0AA /* SummaryUserInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryUserInformation.swift; sourceTree = "<group>"; };
+		B76ED8F922BFC29F00C1E0AA /* FollowingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +230,7 @@
 		B714274A22B6C17E0017BAD7 /* GitHubTests */ = {
 			isa = PBXGroup;
 			children = (
+				B76ED8F822BFC28B00C1E0AA /* Following */,
 				B714274B22B6C17E0017BAD7 /* GitHubTests.swift */,
 				B714274D22B6C17E0017BAD7 /* Info.plist */,
 			);
@@ -400,6 +403,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		B76ED8F822BFC28B00C1E0AA /* Following */ = {
+			isa = PBXGroup;
+			children = (
+				B76ED8F922BFC29F00C1E0AA /* FollowingTests.swift */,
+			);
+			path = Following;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -429,6 +440,7 @@
 				B714274322B6C17E0017BAD7 /* Sources */,
 				B714274422B6C17E0017BAD7 /* Frameworks */,
 				B714274522B6C17E0017BAD7 /* Resources */,
+				B76ED8FB22BFC2B300C1E0AA /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -590,6 +602,25 @@
 			shellPath = /bin/sh;
 			shellScript = "echo $SRCROOT\n\"$SRCROOT/bin/rswift\" generate \"$SRCROOT\"\n";
 		};
+		B76ED8FB22BFC2B300C1E0AA /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxTest.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -629,6 +660,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B714274C22B6C17E0017BAD7 /* GitHubTests.swift in Sources */,
+				B76ED8FA22BFC29F00C1E0AA /* FollowingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -833,17 +865,22 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = GitHubTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tomoki-sun.GitHubTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitHub.app/GitHub";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitHub-dev.app/GitHub-dev";
 			};
 			name = Debug;
 		};
@@ -854,6 +891,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = GitHubTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -864,7 +905,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitHub.app/GitHub";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitHub-dev.app/GitHub-dev";
 			};
 			name = Release;
 		};

@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import GitHub
+@testable import GitHub_dev
 
 class GitHubTests: XCTestCase {
 
