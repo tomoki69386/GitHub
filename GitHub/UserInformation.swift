@@ -55,7 +55,7 @@ struct UserInformation: Codable {
         case id
         case avatarURL = "avatar_url"
         case name
-        case description = ""
+        case description = "bio"
         case publicRepositorys = "public_repos"
         case followers
         case following

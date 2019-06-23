@@ -7,12 +7,22 @@
 //
 
 import UIKit
+import NSObject_Rx
 
 class ProfileViewController: UITableViewController {
+    
+    private let viewModel = ProfileViewModel(model: ProfileModel())
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        viewModel.errors.drive(onNext: { error in
+            print(error)
+        }).disposed(by: rx.disposeBag)
+        
+        viewModel.user.drive(onNext: { user in
+            print(user)
+        }).disposed(by: rx.disposeBag)
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
