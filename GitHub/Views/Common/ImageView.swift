@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Nuke
 
 @IBDesignable class ImageView: UIImageView {
     
@@ -36,5 +37,24 @@ import UIKit
             layer.cornerRadius = newValue
             layer.masksToBounds = newValue > 0
         }
+    }
+    
+    func setImage(with urlString: String?) {
+        guard let urlString = urlString, let url = URL(string: urlString) else {
+            return
+        }
+        let pipeline = ImagePipeline {
+            $0.dataLoader = DataLoader(configuration: {
+                let configuration = DataLoader.defaultConfiguration
+                configuration.urlCache = nil
+                return configuration
+            }())
+            $0.imageCache = ImageCache()
+            $0.dataCache = try! DataCache(name: "")
+        }
+        let request = ImageRequest(url: url)
+        var options = ImageLoadingOptions()
+        options.pipeline = pipeline
+        loadImage(with: request, options: options, into: self)
     }
 }

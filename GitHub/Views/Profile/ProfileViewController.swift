@@ -12,7 +12,7 @@ import NSObject_Rx
 
 class ProfileViewController: UITableViewController {
     
-    @IBOutlet private weak var avatarImageView: UIImageView!
+    @IBOutlet private weak var avatarImageView: ImageView!
     @IBOutlet private weak var usernameLabel: UILabel!
     @IBOutlet private weak var screenIdLabel: UILabel!
     @IBOutlet private weak var followersButton: UIButton!
@@ -31,8 +31,8 @@ class ProfileViewController: UITableViewController {
             self?.avatarImageView.setImage(with: user.avatarURL)
             self?.usernameLabel.text = user.name
             self?.screenIdLabel.text = user.screenId
-            self?.followersButton.setTitle("\(user.followers)Followers", for: .normal)
-            self?.followingButton.setTitle("\(user.following)Following", for: .normal)
+            self?.followersButton.titleLabel?.text = "\(user.followers)Followers"
+            self?.followingButton.titleLabel?.text = "\(user.following)Following"
         }).disposed(by: rx.disposeBag)
         
         followingButton.rx.tap.asDriver().drive(onNext: { [weak self] in
