@@ -63,6 +63,8 @@
 		B76ED8FA22BFC29F00C1E0AA /* FollowingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76ED8F922BFC29F00C1E0AA /* FollowingTests.swift */; };
 		B76ED8FE22BFC94D00C1E0AA /* FollowersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76ED8FD22BFC94D00C1E0AA /* FollowersModel.swift */; };
 		B76ED90022BFC9A100C1E0AA /* FollowersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76ED8FF22BFC9A100C1E0AA /* FollowersViewModel.swift */; };
+		B789E42622CFC4EE006E2694 /* String+GitHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = B789E42522CFC4EE006E2694 /* String+GitHub.swift */; };
+		B789E42922CFC766006E2694 /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B789E42822CFC766006E2694 /* StringTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +149,8 @@
 		B76ED8F922BFC29F00C1E0AA /* FollowingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingTests.swift; sourceTree = "<group>"; };
 		B76ED8FD22BFC94D00C1E0AA /* FollowersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersModel.swift; sourceTree = "<group>"; };
 		B76ED8FF22BFC9A100C1E0AA /* FollowersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersViewModel.swift; sourceTree = "<group>"; };
+		B789E42522CFC4EE006E2694 /* String+GitHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+GitHub.swift"; sourceTree = "<group>"; };
+		B789E42822CFC766006E2694 /* StringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +236,7 @@
 		B714274A22B6C17E0017BAD7 /* GitHubTests */ = {
 			isa = PBXGroup;
 			children = (
+				B789E42722CFC75A006E2694 /* Extensions */,
 				B76ED8F822BFC28B00C1E0AA /* Following */,
 				B714274B22B6C17E0017BAD7 /* GitHubTests.swift */,
 				B714274D22B6C17E0017BAD7 /* Info.plist */,
@@ -267,6 +272,7 @@
 				B714277022B6C69E0017BAD7 /* PKHUD+GitHub.swift */,
 				B71427C922B7005A0017BAD7 /* UIBarButtonItem+GitHub.swift */,
 				B714277222B6C6C60017BAD7 /* UIVew+GitHub.swift */,
+				B789E42522CFC4EE006E2694 /* String+GitHub.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -412,6 +418,14 @@
 				B76ED8F922BFC29F00C1E0AA /* FollowingTests.swift */,
 			);
 			path = Following;
+			sourceTree = "<group>";
+		};
+		B789E42722CFC75A006E2694 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B789E42822CFC766006E2694 /* StringTests.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -654,6 +668,7 @@
 				B71427A322B6D1640017BAD7 /* TabBarController.swift in Sources */,
 				B71427C122B6FDCE0017BAD7 /* BasicListTableViewCell.swift in Sources */,
 				B714277322B6C6C60017BAD7 /* UIVew+GitHub.swift in Sources */,
+				B789E42622CFC4EE006E2694 /* String+GitHub.swift in Sources */,
 				B71427AC22B6D5080017BAD7 /* ProfileViewModel.swift in Sources */,
 				B71427AE22B6D50E0017BAD7 /* ProfileModel.swift in Sources */,
 			);
@@ -664,6 +679,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B714274C22B6C17E0017BAD7 /* GitHubTests.swift in Sources */,
+				B789E42922CFC766006E2694 /* StringTests.swift in Sources */,
 				B76ED8FA22BFC29F00C1E0AA /* FollowingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
