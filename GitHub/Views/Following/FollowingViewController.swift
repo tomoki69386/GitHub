@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 import PKHUD
 
 class FollowingViewController: UITableViewController {
+    
+    @IBOutlet private weak var searchBar: UISearchBar!
     
     fileprivate var viewModel: FollowingViewModel!
     private lazy var dataSource = FollowingDataSource(with: self.tableView, viewModel: self.viewModel)
@@ -26,6 +30,8 @@ class FollowingViewController: UITableViewController {
         tableView.register(BasicListTableViewCell.nib, forCellReuseIdentifier: BasicListTableViewCell.name)
         _ = dataSource
         navigationItem.title = "Following"
+        
+        searchBar.rx.text.orEmpty.bind(to: viewModel.query).disposed(by: rx.disposeBag)
         
         viewModel.errors.drive(onNext: { error in
             HUD.flashMessage(.label(error.localizedDescription))

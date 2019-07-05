@@ -64,6 +64,9 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
+                    <connections>
+                        <outlet property="searchBar" destination="tM7-PN-H1C" id="Ulx-ws-m70"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kL8-Dc-542" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

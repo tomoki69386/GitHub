@@ -11,11 +11,26 @@ import RxCocoa
 
 protocol FollowingModelProtocol {
     func getFollowingUsers(of name: String) -> Single<[SummaryUserInformation]>
+    func searchUser(by query: String, users: [SummaryUserInformation]) -> Observable<[SummaryUserInformation]>
 }
 
 final class FollowingModel: FollowingModelProtocol {
     let userInfoProvider = UserInfoProvider()
     func getFollowingUsers(of name: String) -> Single<[SummaryUserInformation]> {
         return userInfoProvider.getFollowingUsers(of: name)
+    }
+    
+    func searchUser(by query: String, users: [SummaryUserInformation]) -> Observable<[SummaryUserInformation]> {
+        return Observable.create { observable in
+            var _users = [SummaryUserInformation]()
+            users.forEach {
+                if $0.screenId.search(by: query) {
+                    _users.append($0)
+                }
+            }
+            observable.onNext(_users)
+            observable.onCompleted()
+            return Disposables.create()
+        }
     }
 }
