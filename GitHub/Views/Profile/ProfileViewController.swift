@@ -12,7 +12,7 @@ import NSObject_Rx
 
 class ProfileViewController: UITableViewController {
     
-    @IBOutlet private weak var avatarImageView: UIImageView!
+    @IBOutlet private weak var avatarImageView: ImageView!
     @IBOutlet private weak var usernameLabel: UILabel!
     @IBOutlet private weak var screenIdLabel: UILabel!
     @IBOutlet private weak var followersButton: UIButton!
