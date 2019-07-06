@@ -46,8 +46,8 @@ struct UserInformation: Codable {
     var id = 0
     var screenId = ""
     var avatarURL = ""
-    var name = ""
-    var description = ""
+    var name: String? = ""
+    var description: String? = ""
     var publicRepositorys = 0
     var followers = 0
     var following = 0
