@@ -14,9 +14,14 @@ protocol ProfileModelProtocol {
 }
 
 final class ProfileModel: ProfileModelProtocol {
+
     let userInfoProvider = UserInfoProvider()
+    let name: String
+    init(by name: String) {
+        self.name = name
+    }
     
     func getLoginUser() -> Single<UserInformation> {
-        return userInfoProvider.getLoginUser()
+        return userInfoProvider.getUser(by: name)
     }
 }
