@@ -8,11 +8,23 @@
 
 import UIKit
 
-class FollowingDataSource: NSObject, UITableViewDataSource {
+protocol ViewModelProtocol {
+    associatedtype Output
+    func output(_ handler: ((Output) -> Void)?)
+}
+
+class FollowingDataSource: NSObject, UITableViewDataSource, UITableViewDelegate, ViewModelProtocol {
+    typealias Output = ProfileViewController
+    func output(_ handler: ((ProfileViewController) -> Void)?) {
+        self.handler = handler
+    }
+    var handler: ((ProfileViewController) -> ())?
+
     private var viewModel: FollowingViewModel!
     convenience init(with tableView: UITableView, viewModel: FollowingViewModel) {
         self.init()
         tableView.dataSource = self
+        tableView.delegate = self
         self.viewModel = viewModel
     }
     
@@ -27,5 +39,11 @@ class FollowingDataSource: NSObject, UITableViewDataSource {
         let user = viewModel.users[indexPath.row]
         cell.update(url: user.avatarURL, body: user.screenId)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let user = viewModel.users[indexPath.row]
+        let target = ProfileViewController.make(by: user.screenId)
+        self.handler?(target)
     }
 }

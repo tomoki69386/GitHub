@@ -31,6 +31,10 @@ class FollowingViewController: UITableViewController {
         _ = dataSource
         navigationItem.title = "Following"
         
+        dataSource.output { [weak self] target in
+            self?.navigationController?.pushViewController(target, animated: true)
+        }
+        
         searchBar.rx.text.orEmpty.bind(to: viewModel.query).disposed(by: rx.disposeBag)
         
         viewModel.errors.drive(onNext: { error in
