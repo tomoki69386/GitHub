@@ -65,6 +65,7 @@
 		B76ED90022BFC9A100C1E0AA /* FollowersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76ED8FF22BFC9A100C1E0AA /* FollowersViewModel.swift */; };
 		B789E42622CFC4EE006E2694 /* String+GitHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = B789E42522CFC4EE006E2694 /* String+GitHub.swift */; };
 		B789E42922CFC766006E2694 /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B789E42822CFC766006E2694 /* StringTests.swift */; };
+		B789E42C22D101FA006E2694 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B789E42B22D101FA006E2694 /* BaseRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +152,7 @@
 		B76ED8FF22BFC9A100C1E0AA /* FollowersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersViewModel.swift; sourceTree = "<group>"; };
 		B789E42522CFC4EE006E2694 /* String+GitHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+GitHub.swift"; sourceTree = "<group>"; };
 		B789E42822CFC766006E2694 /* StringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
+		B789E42B22D101FA006E2694 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -298,6 +300,7 @@
 		B714276822B6C4D20017BAD7 /* Networks */ = {
 			isa = PBXGroup;
 			children = (
+				B789E42A22D101C9006E2694 /* Requests */,
 				B71427D022B7047F0017BAD7 /* BaseProvider.swift */,
 				B71427CE22B702730017BAD7 /* GithubAPI.swift */,
 				B76ED8E922BF8FAE00C1E0AA /* UserInfoProvider.swift */,
@@ -426,6 +429,14 @@
 				B789E42822CFC766006E2694 /* StringTests.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		B789E42A22D101C9006E2694 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				B789E42B22D101FA006E2694 /* BaseRequest.swift */,
+			);
+			name = Requests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -662,6 +673,7 @@
 				B714276C22B6C5DC0017BAD7 /* SplashViewController.swift in Sources */,
 				B71427CF22B702730017BAD7 /* GithubAPI.swift in Sources */,
 				B714277122B6C69E0017BAD7 /* PKHUD+GitHub.swift in Sources */,
+				B789E42C22D101FA006E2694 /* BaseRequest.swift in Sources */,
 				B71427BD22B6E1360017BAD7 /* FollowingViewController.swift in Sources */,
 				B76ED8F322BFA11900C1E0AA /* FollowingModel.swift in Sources */,
 				B71427B122B6D67C0017BAD7 /* ImageView.swift in Sources */,
