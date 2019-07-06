@@ -50,3 +50,6 @@ fastlane/test_output
 # R.swift
 *.generated.swift
 /*.generated.swift
+
+*.KeyManager.swift
+/*.KeyManager.swift
