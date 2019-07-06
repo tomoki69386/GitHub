@@ -51,5 +51,4 @@ fastlane/test_output
 *.generated.swift
 /*.generated.swift
 
-*.KeyManager.swift
-/*.KeyManager.swift
+KeyManager.swift
