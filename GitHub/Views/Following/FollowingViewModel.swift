@@ -13,6 +13,7 @@ class FollowingViewModel {
     
     private let disposeBag = DisposeBag()
     
+    private var preusers: [SummaryUserInformation] = []
     private let _users = BehaviorRelay<[SummaryUserInformation]>(value: [])
     var users: [SummaryUserInformation] { return _users.value }
     
@@ -22,6 +23,7 @@ class FollowingViewModel {
     }
     
     var reloadData: Driver<Void> = .empty()
+    var query = Variable<String>("")
     
     init(username: String,
          model: FollowingModelProtocol) {
@@ -42,7 +44,22 @@ class FollowingViewModel {
                 }
             }.subscribe(onNext: { [weak self] response in
                 self?._users.accept(response)
+                self?.preusers = response
             })
+            .disposed(by: disposeBag)
+        
+        Observable
+            .of(query.asObservable())
+            .merge()
+            .map { _ in }
+            .flatMapFirst { [weak self] _ -> Observable<[SummaryUserInformation]> in
+                guard let me = self else { return .empty() }
+                if me.query.value.isEmpty {
+                    me._users.accept(me.preusers)
+                    return .empty()
+                }
+                return model.searchUser(by: me.query.value, users: me.preusers)
+            }.bind(to: _users)
             .disposed(by: disposeBag)
     }
 }

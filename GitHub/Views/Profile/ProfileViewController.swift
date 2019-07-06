@@ -18,10 +18,20 @@ class ProfileViewController: UITableViewController {
     @IBOutlet private weak var followersButton: UIButton!
     @IBOutlet private weak var followingButton: UIButton!
     
-    private let viewModel = ProfileViewModel(model: ProfileModel())
+    fileprivate var viewModel: ProfileViewModel!
+    
+    static func make(by name: String) -> ProfileViewController {
+        let vc = R.storyboard.profile.instantiateInitialViewController()!
+        vc.viewModel = ProfileViewModel(model: ProfileModel(by: name))
+        return vc
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if viewModel == nil {
+            viewModel = ProfileViewModel(model: ProfileModel(by: "tomoki69386"))
+        }
         
         viewModel.errors.drive(onNext: { error in
             print(error)
